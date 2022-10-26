@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="680.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="edu.ntnu.idatt2001.ecschoye.gui.controllers.BattleMenuController">
+   <children>
+      <AnchorPane prefHeight="739.0" prefWidth="1251.0" style="-fx-background-color: darkgray; -fx-border-color: maroon;" VBox.vgrow="ALWAYS">
+         <children>
+            <Pane prefHeight="80.0" prefWidth="824.0">
+               <padding>
+                  <Insets right="50.0" />
+               </padding>
+               <children>
+                  <Label layoutX="39.0" layoutY="31.0" text="Wargames" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Font" size="42.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.36046511627906974">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.29019609093666077" green="0.13333334028720856" blue="0.054901961237192154" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="300.0" layoutY="60.0" mnemonicParsing="false" onAction="#goToAddArmy" prefHeight="62.0" prefWidth="150.0" style="-fx-background-color: gray; -fx-border-color: maroon; -fx-text-alignment: center;" text="Add army" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.46111111111111114" centerY="0.5285714285714286" radius="0.43023255813953487">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.28947368264198303" green="0.13222871720790863" blue="0.05360623821616173" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.29019609093666077" green="0.13333334028720856" blue="0.054901961237192154" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Button>
+                  <Button layoutX="460.0" layoutY="60.0" mnemonicParsing="false" onAction="#goToUploadArmy" prefHeight="62.0" prefWidth="150.0" style="-fx-background-color: gray; -fx-border-color: maroon; -fx-text-alignment: center;" text="Upload army" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.46111111111111114" centerY="0.5285714285714286" radius="0.8139534883720929">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.28947368264198303" green="0.13222871720790863" blue="0.05360623821616173" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.7368420958518982" green="0.5684941411018372" blue="0.2558479607105255" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Button>
+                  <Button layoutX="620.0" layoutY="60.0" mnemonicParsing="false" onAction="#goToViewArmies" prefHeight="62.0" prefWidth="150.0" style="-fx-background-color: gray; -fx-border-color: maroon; -fx-text-alignment: center;" text="View armies">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.46111111111111114" centerY="0.5285714285714286" radius="0.43023255813953487">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.28947368264198303" green="0.13222871720790863" blue="0.05360623821616173" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.40789473056793213" green="0.3107364773750305" blue="0.13029970228672028" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Button>
+                  <Button layoutX="860.0" layoutY="60.0" mnemonicParsing="false" onAction="#goToBattleMenu" prefHeight="62.0" prefWidth="200.0" style="-fx-background-color: gray; -fx-border-color: maroon; -fx-text-alignment: center;" text="Battle menu" textAlignment="CENTER">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.3944444444444445" centerY="0.5285714285714286" radius="0.5697674418604651">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.28947368264198303" green="0.13222871720790863" blue="0.05360623821616173" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.6196078658103943" green="0.48235294222831726" blue="0.21176470816135406" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutY="109.0" prefHeight="547.0" prefWidth="1300.0">
+               <children>
+                  <Label layoutX="495.0" layoutY="30.0" text="Battle menu:" textFill="#4a220e">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="406.0" layoutY="61.0" text="Choose two armies that will fight to death!" textFill="#4a220e">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="366.0" layoutY="373.0" text="Choose an army and press any of the choose army buttons" textFill="#4a220e">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelArmyName" layoutX="650.0" layoutY="20.0" prefHeight="51.0" prefWidth="209.0" />
+                  <TableView fx:id="tableViewBattleArmies" layoutX="134.0" layoutY="105.0" prefHeight="252.0" prefWidth="955.0" style="-fx-background-color: silver; -fx-border-color: maroon;">
+                     <columns>
+                        <TableColumn fx:id="columnArmyName" prefWidth="181.0" text="Army name" />
+                        <TableColumn fx:id="columnFileName" prefWidth="194.0" text="File name" />
+                        <TableColumn fx:id="columnTotalUnits" prefWidth="194.0" text="Total units" />
+                        <TableColumn fx:id="columnAvgBaseAtt" prefWidth="197.0" text="Avg base attack" />
+                        <TableColumn fx:id="columnTotalHealth" prefWidth="186.0" text="Total health" />
+                     </columns>
+                  </TableView>
+                  <Button layoutX="134.0" layoutY="369.0" mnemonicParsing="false" onAction="#chooseArmyOne" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: gray; -fx-border-color: maroon;" text="Choose first army">
+                     <textFill>
+                        <RadialGradient centerX="0.3944444444444445" centerY="0.5285714285714286" radius="0.5838150289017341">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.28947368264198303" green="0.13222871720790863" blue="0.05360623821616173" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.6196078658103943" green="0.48235294222831726" blue="0.21176470816135406" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill></Button>
+                  <Button layoutX="889.0" layoutY="369.0" mnemonicParsing="false" onAction="#chooseArmyTwo" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: gray; -fx-border-color: maroon;" text="Choose second army">
+                     <textFill>
+                        <RadialGradient centerX="0.3944444444444445" centerY="0.5285714285714286" radius="0.6416184971098265">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.28947368264198303" green="0.13222871720790863" blue="0.05360623821616173" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.6196078658103943" green="0.48235294222831726" blue="0.21176470816135406" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill></Button>
+                  <ChoiceBox fx:id="choiceBoxTerrain" layoutX="371.0" layoutY="458.0" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: gray; -fx-border-color: maroon;" />
+                  <Button layoutX="599.0" layoutY="447.0" mnemonicParsing="false" onAction="#initiateBattle" prefHeight="50" prefWidth="228.0" style="-fx-background-color: gray; -fx-border-color: maroon;" text="Go to battle simulation">
+                     <textFill>
+                        <RadialGradient centerX="0.3944444444444445" centerY="0.5285714285714286" radius="0.7547385401263611">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.28947368264198303" green="0.13222871720790863" blue="0.05360623821616173" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.6196078658103943" green="0.48235294222831726" blue="0.21176470816135406" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                     <font>
+                        <Font size="19.0" />
+                     </font></Button>
+                  <Label fx:id="labelArmyOne" layoutX="134.0" layoutY="447.0" prefHeight="17.0" prefWidth="200.0" textFill="#4a220e">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelArmyTwo" layoutX="889.0" layoutY="447.0" prefHeight="17.0" prefWidth="200.0" textFill="#4a220e">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="418.0" layoutY="426.0" text="Terrain:" textFill="#4a220e">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
