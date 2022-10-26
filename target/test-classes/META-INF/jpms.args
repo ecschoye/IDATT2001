@@ -1,4 +1,0 @@
---patch-module
-Cardgame=_
---add-reads
-Cardgame=ALL-UNNAMED

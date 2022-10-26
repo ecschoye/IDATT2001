@@ -1,6 +1,6 @@
-# Cardgame
+# Wargames-part-3
 
-Card game exercise in IDATT2001
+
 
 ## Getting started
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.stud.idi.ntnu.no/ecschoye/cardgame.git
+git remote add origin https://gitlab.stud.idi.ntnu.no/ecschoye/wargames-part-3.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.stud.idi.ntnu.no/ecschoye/cardgame/-/settings/integrations)
+- [ ] [Set up project integrations](https://gitlab.stud.idi.ntnu.no/ecschoye/wargames-part-3/-/settings/integrations)
 
 ## Collaborate with your team
 
